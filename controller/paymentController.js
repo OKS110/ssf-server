@@ -16,9 +16,9 @@ export const paymentKakaopay = async(req, res) => {
                 quantity: 1,
                 total_amount,
                 tax_free_amount: 0,
-                approval_url: "http://localhost:3001/payment/success", //  결제 성공 시 이동할 URL
-                cancel_url: "http://localhost:3001/payment/cancel",   //  결제 취소 시 이동할 URL
-                fail_url: "http://localhost:3001/payment/fail",       //  결제 실패 시 이동할 URL
+                approval_url: "http://ssf-client.s3-website.ap-northeast-2.amazonaws.com/payment/success", //  결제 성공 시 이동할 URL
+                cancel_url: "http://ssf-client.s3-website.ap-northeast-2.amazonaws.com/payment/cancel",   //  결제 취소 시 이동할 URL
+                fail_url: "http://ssf-client.s3-website.ap-northeast-2.amazonaws.com/payment/fail",       //  결제 실패 시 이동할 URL
             },
             {
                 headers: {

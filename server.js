@@ -18,7 +18,7 @@ const port = 9000;
 
 //  CORS 설정 (클라이언트 도메인 허용)
 server.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:3001'], 
+    origin: ['http://localhost:3000', 'http://ssf-admin-client.s3-website.ap-northeast-2.amazonaws.com/'], 
     credentials: true
 }));
 
