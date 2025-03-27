@@ -48,7 +48,7 @@ server.route('/product/update')
     });
 
 //  WebSocket 설정 (고객 서버 → 관리자 서버)
-const wss = new WebSocket('ws://localhost:9002');
+const wss = new WebSocket('ws://3.34.134.163:9002');
 
 wss.onopen = () => console.log(' 고객 서버 → 관리자 서버 WebSocket 연결됨');
 wss.onerror = (error) => console.error('ERROR WebSocket 오류:', error);
